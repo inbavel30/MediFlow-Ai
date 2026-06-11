@@ -2,21 +2,6 @@
 
 > **Hackathon Demo** · Real-time, 100% software-defined hospital network orchestrator for Chennai's public hospital network
 
----
-
-## 🚀 Live Demo Links
-
-| Service | URL | Status |
-|---------|-----|--------|
-| **Main Control Tower (Vite App)** | http://localhost:8080/dashboard | ✅ Running |
-| **Next.js Frontend** | http://localhost:3001/dashboard | ✅ Running |
-| **FastAPI Backend** | http://localhost:8000 | ✅ Running |
-| **API Docs (Swagger)** | http://localhost:8000/docs | ✅ Running |
-| **Health Check** | http://localhost:8000/health | ✅ Healthy |
-
-> **Note:** The primary hackathon demo is at **http://localhost:8080** (Vite + React). It runs completely standalone — no backend required, all AI logic runs in the browser via a simulation engine.
-
----
 
 ## 🎯 What Problem We Solve
 
@@ -33,7 +18,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ## 📱 Page-by-Page Guide for Judges
 
-### 1. 🖥️ Dashboard — http://localhost:8080/dashboard
+### 1. 🖥️ Dashboard
 
 **What you see:**
 - **4 KPI Cards** at the top: Avg ER Wait (minutes), System Load (%), Active Diversions count, Patients Routed Today
@@ -50,8 +35,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 2. 🚨 ER Queue — http://localhost:8080/er-queue
-
+### 2. 🚨 ER Queue 
 **What you see:**
 - **Hospital Selector Tabs** (RGGGH / Stanley / Kilpauk) — click to switch between hospital queues; shows patient count per tab
 - **ER Status Banner** — current hospital's queue depth, average wait time, and a dynamic *"ER safe for ~Xm more"* countdown
@@ -71,7 +55,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 3. 🏨 Ward Digital Twin — http://localhost:8080/ward-twin
+### 3. 🏨 Ward Digital Twin 
 
 **What you see:**
 - **Ward Cards** — 4 types per hospital (ICU, General, Trauma, Maternity) showing occupancy percentage, beds available, color status ring, and bed-level breakdown bar
@@ -87,7 +71,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 4. 🤖 AI Decision Log — http://localhost:8080/ai-log
+### 4. 🤖 AI Decision Log 
 
 **What you see:**
 - **Filter Tabs**: `All`, `ESI 1-2 Critical`, `Redirected`, `Overridden` — filters the decision log
@@ -111,7 +95,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 5. ⚗️ Simulation Console — http://localhost:8080/simulation
+### 5. ⚗️ Simulation Console 
 
 **What you see:**
 - **Mode Toggle** (large pill switch) — flips between `Baseline` (random routing) and `MediFlow AI` (optimized routing)
@@ -136,7 +120,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 6. 🚑 Ambulance Dispatcher — http://localhost:8080/ambulance
+### 6. 🚑 Ambulance Dispatcher 
 
 **What you see:**
 - **Quick Patient Entry panel**:
@@ -159,7 +143,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 7. 📊 Analytics — http://localhost:8080/analytics
+### 7. 📊 Analytics 
 
 **What you see:**
 - **24-Hour Occupancy Trend** — multi-line chart (one line per hospital) showing occupancy % over 24 hours with a mock sinusoidal trend representing day/night patterns
@@ -169,7 +153,7 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
 
 ---
 
-### 8. 📋 Patient Intake Form — http://localhost:8080/intake
+### 8. 📋 Patient Intake Form 
 
 **What you see:**
 - **Patient form**: Name field, Age field
@@ -187,13 +171,6 @@ Chennai's public hospitals — RGGGH (1,500 beds), Stanley Medical (1,531 beds),
   - Score comparison bar for all 3 hospitals (shows why top hospital won)
   - Trade-off note
 
----
-
-### 9. ℹ️ About — http://localhost:8080/about
-
-Brief overview of the MediFlow system, the 5-layer architecture, and technology stack.
-
----
 
 ## 🧠 AI Engine — How It Works
 
